@@ -16,7 +16,7 @@ namespace EventApi.Controllers
                 DateTimeStart = DateTime.Now.AddDays(1),
                 DateTimeEnd = DateTime.Now.AddDays(2),
                 Price = 10.99m
-            },
+            }, 
             new Event
             {
                 Id = Guid.Parse("91b4c250-b3bf-4af6-96ae-8b3f25d57904"),

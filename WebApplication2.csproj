@@ -5,10 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>7924d718-22cd-4eee-89d7-19cd5f8b99e1</UserSecretsId>
-	<EntryPoint>Program.cs</EntryPoint>
     <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
-	  <StartupObject>YourNamespace.Program</StartupObject>
-
   </PropertyGroup>
 
   <ItemGroup>
