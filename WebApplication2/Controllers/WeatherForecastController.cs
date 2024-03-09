@@ -11,8 +11,8 @@ namespace EventApi.Controllers
             new Event
             {
                 Id = Guid.Parse("15b9189c-fa43-4716-9a55-b396da96c8d8"),
-                Title = "◊≈–Õ¿ﬂ œﬂ“Õ»÷¿",
-                Description = "Î˛ÚÂÈ¯ÂÂ ÓÔËÒ‡ÌËÂ",
+                Title = "–ß–ï–†–ù–ê–Ø –ü–Ø–¢–ù–ò–¶–ê",
+                Description = "–ª—é—Ç–µ–π—à–µ–µ –æ–ø–∏—Å–∞–Ω–∏–µ",
                 DateTimeStart = DateTime.Now.AddDays(1),
                 DateTimeEnd = DateTime.Now.AddDays(2),
                 Price = 10.99m
@@ -20,8 +20,8 @@ namespace EventApi.Controllers
             new Event
             {
                 Id = Guid.Parse("91b4c250-b3bf-4af6-96ae-8b3f25d57904"),
-                Title = "œ–» ŒÀ",
-                Description = "ÔË‚Ó ÔÓ ÍË‰ÍÂ",
+                Title = "–ü–†–ò–ö–û–õ",
+                Description = "–ø–∏–≤–æ –ø–æ –∫–∏–¥–∫–µ",
                 DateTimeStart = DateTime.Now.AddDays(3),
                 DateTimeEnd = DateTime.Now.AddDays(4),
                 Price = 20.49m
