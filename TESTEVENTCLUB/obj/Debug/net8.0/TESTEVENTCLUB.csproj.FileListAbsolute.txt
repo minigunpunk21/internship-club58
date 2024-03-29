@@ -1,0 +1,6 @@
+C:\Users\User\Source\Repos\internship-club58\TESTEVENTCLUB\obj\Debug\net8.0\TESTEVENTCLUB.csproj.AssemblyReference.cache
+C:\Users\User\Source\Repos\internship-club58\TESTEVENTCLUB\obj\Debug\net8.0\TESTEVENTCLUB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Source\Repos\internship-club58\TESTEVENTCLUB\obj\Debug\net8.0\TESTEVENTCLUB.AssemblyInfoInputs.cache
+C:\Users\User\Source\Repos\internship-club58\TESTEVENTCLUB\obj\Debug\net8.0\TESTEVENTCLUB.AssemblyInfo.cs
+C:\Users\User\Source\Repos\internship-club58\TESTEVENTCLUB\obj\Debug\net8.0\TESTEVENTCLUB.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\internship-club58\TESTEVENTCLUB\obj\Debug\net8.0\TESTEVENTCLUB.sourcelink.json

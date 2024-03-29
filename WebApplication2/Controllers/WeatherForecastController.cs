@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
 
 namespace EventApi.Controllers
 {
@@ -10,7 +12,7 @@ namespace EventApi.Controllers
         {
             new Event
             {
-                Id = Guid.Parse("15b9189c-fa43-4716-9a55-b396da96c8d8"),
+                Id = "15b9189c-fa43-4716-9a55-b396da96c8d8",
                 Title = "ЧЕРНАЯ ПЯТНИЦА",
                 Description = "лютейшее описание",
                 DateTimeStart = DateTime.Now.AddDays(1),
@@ -19,7 +21,7 @@ namespace EventApi.Controllers
             },
             new Event
             {
-                Id = Guid.Parse("91b4c250-b3bf-4af6-96ae-8b3f25d57904"),
+                Id = "91b4c250-b3bf-4af6-96ae-8b3f25d57904",
                 Title = "ПРИКОЛ",
                 Description = "пиво по кидке",
                 DateTimeStart = DateTime.Now.AddDays(3),
@@ -35,7 +37,7 @@ namespace EventApi.Controllers
         }
 
         [HttpGet("{eventId}")]
-        public IActionResult GetEvent(Guid eventId)
+        public IActionResult GetEvent(string eventId)
         {
             var @event = _events.Find(e => e.Id == eventId);
             if (@event == null)
@@ -48,12 +50,25 @@ namespace EventApi.Controllers
 
     public class Event
     {
-        public Guid Id { get; set; }
+        public string Id { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public DateTime DateTimeStart { get; set; }
         public DateTime DateTimeEnd { get; set; }
         public decimal Price { get; set; }
+
+        // Пустой конструктор нужен для сериализации объекта JSON
+        public Event() { }
+
+        // Конструктор с параметрами
+        public Event(string id, string title, string description, DateTime dateTimeStart, DateTime dateTimeEnd, decimal price)
+        {
+            Id = id;
+            Title = title;
+            Description = description;
+            DateTimeStart = dateTimeStart;
+            DateTimeEnd = dateTimeEnd;
+            Price = price;
+        }
     }
 }
-
